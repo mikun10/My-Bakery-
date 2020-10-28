@@ -46,6 +46,7 @@ header{
     list-style: none;
     margin-left: 40px;
 }
+
 .main-nav li a{
     padding: 5px 0px;
     color: #fff;
@@ -124,5 +125,12 @@ h1{
 @media  only screen and  (max-width: 768px){
     h1{ font-size: 180%;}
     .main-nav{display: none;}
+    .bar-icon{
+        display: inline-block;
+        float: right;
+        color: #fff;
+        margin-top: 30px;
+        
+    }
 }
 
