@@ -20,13 +20,13 @@
         <nav>
             <div class="row-container clearfix">
                   <img class="logo" src="/images/wooden-background-with-bakery-badge_23-2147558949.jpg" alt="logo" />
-                  <ul class="main-nav animate__animated animate__slideInDown">
+                  <ul class="main-nav animate__animated animate__slideInDown "  id="check-class">
                       <li><a href=#>MENU</a</li>
                       <li><a href=#>DELIVERY</a></li>
                       <li><a href=#>CONTACT US</a></li>
                       <li><a href=#>SIGN UP</a></li>
                   </ul>
-                  <a href="#" class="bar-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+                  <a href="#" class="bar-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
             </div>
         </nav>
         <div class="main-content-header">
@@ -37,5 +37,17 @@
         </div>
 
     </header>
+    <script type="text/javascript">
+        function slideshow(){
+            var x = document.getElementById('check-class');
+
+            if(x.style.display === "none"){
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

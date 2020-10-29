@@ -106,12 +106,21 @@ h1{
     animation: mycolorchange 1s infinite;
 }
 
+
+
+ 
 @keyframes mycolorchange{
     0%{color: #33ccff;}
     25%{color: rgb(255, 238, 0);}
     50%{color: rgb(255, 0, 0);}
     100%{color: rgb(58, 223, 16);}
 }
+
+.bar-icon{
+    display: none;
+}
+
+/* Respopnsive Queries */
 
 @media only screen and  (max-width: 1180px){
 .main-content-header{
@@ -130,7 +139,18 @@ h1{
         float: right;
         color: #fff;
         margin-top: 30px;
-        
+        margin-right: 20px; 
+    }
+    .main-nav{ float: left;}
+    .main-nav li {
+         display: block;
+        margin-top: 10px; 
     }
 }
+@media  only screen and  (max-width: 360px){
+    h1{ font-size: 100%;}
+    .btn-full{
+        margin-bottom: 10px;
+    }
 
+}
